@@ -7,7 +7,7 @@ let videoSize = {};
 let landscape = true;
 let go = false;
 
-let vScale = 10;
+let vScale = 15;
 let ratio = 1;
 let hDiff = 0;
 let wDiff = 0;
