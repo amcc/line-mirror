@@ -15,7 +15,14 @@ let wDiff = 0;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   pixelDensity(1);
-  video = createCapture(VIDEO, onVideoLoaded);
+  // video = createCapture(VIDEO, onVideoLoaded);
+  video = createCapture({
+    audio: false,
+    video: {
+      facingMode: "user",
+      frameRate: 30
+    }
+  });
 }
 function onVideoLoaded() {}
 
